@@ -4,13 +4,13 @@ html {
 }
 
 :root {
-    --text-color: #e4e4e4; /* Gris claro */
-    --bg-color: #121212;   /* Negro grisáceo */
-    --bg-alt: #1e1e1e;     /* Gris oscuro */
-    --accent-color: #a259ff; /* Morado moderno */
+    --text-color: #e4e4e4;
+    --bg-color: #121212;
+    --bg-alt: #1e1e1e;
+    --accent-color: #a259ff;
     --accent-hover: #8e3dff;
     --border-radius: 8px;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Más visible en fondo oscuro */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -89,7 +89,7 @@ img {
 .container {
     max-width: 1100px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: var(--bg-alt);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
@@ -108,7 +108,7 @@ img {
     border-radius: var(--border-radius);
     padding: 1rem;
     box-shadow: var(--shadow);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .card-proyectos:hover {
@@ -132,12 +132,13 @@ img {
     display: block;
     margin: 1rem auto 0;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .card-btn:hover {
     background-color: var(--accent-hover);
-    color:rgba(62, 245, 56, 0.4)
+    color: white;
+    transform: scale(1.05);
 }
 
 .card-img {
@@ -152,10 +153,15 @@ img {
     color: var(--accent-color);
 }
 
+.skills {
+    overflow-x: auto;
+}
+
 .skills table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+    min-width: 300px;
 }
 
 .skills td {
