@@ -137,6 +137,14 @@ img {
 
 .card-btn:hover {
     background-color: var(--accent-hover);
+    color:rgba(62, 245, 56, 0.4)
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .skills h3 {
