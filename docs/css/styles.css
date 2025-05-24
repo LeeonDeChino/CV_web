@@ -4,13 +4,13 @@ html {
 }
 
 :root {
-    --text-color: #1f1f1f;
-    --bg-color: #f4f4f4;
-    --bg-alt: #ffffff;
-    --accent-color: #0077ff;
-    --accent-hover: #005fcc;
+    --text-color: #e4e4e4; /* Gris claro */
+    --bg-color: #121212;   /* Negro grisáceo */
+    --bg-alt: #1e1e1e;     /* Gris oscuro */
+    --accent-color: #a259ff; /* Morado moderno */
+    --accent-hover: #8e3dff;
     --border-radius: 8px;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Más visible en fondo oscuro */
 }
 
 body {
@@ -42,12 +42,15 @@ img {
 }
 
 .img-profile {
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
+    width: min(200px, 40vw);
+    height: auto;
     border-radius: 50%;
     border: 3px solid var(--accent-color);
     margin: auto;
     transition: transform 0.5s ease-in-out;
+    display: block;
+    object-fit: cover;
 }
 
 .img-profile:hover {
@@ -99,7 +102,7 @@ img {
 
 .card-proyectos {
     background-color: var(--bg-color);
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: var(--border-radius);
     padding: 1rem;
     box-shadow: var(--shadow);
@@ -152,7 +155,7 @@ img {
 }
 
 .skills tr:nth-child(even) {
-    background-color: #e9f2ff;
+    background-color: #2a2a2a;
 }
 
 .contacto ul {
@@ -176,34 +179,6 @@ footer {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Fade In */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Modo claro */
-body.light-mode {
-  background-color: #ffffff;
-  color: #222222;
-}
-body.light-mode .container,
-body.light-mode .card-proyectos {
-  background-color: #f4f4f4;
-  color: #222;
-}
-body.light-mode .menu {
-  background-color: #e0e0e0;
-}
-body.light-mode a {
-  color: #0077ff;
 }
 
 .grid-proyectos, 
