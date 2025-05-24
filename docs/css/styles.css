@@ -49,8 +49,10 @@ img {
     border: 3px solid var(--accent-color);
     margin: auto;
     transition: transform 0.5s ease-in-out;
-    display: block;
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-profile:hover {
