@@ -42,21 +42,39 @@ img {
 }
 
 .img-profile {
-    max-width: 100%;
-    width: min(200px, 40vw);
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid var(--accent-color);
-    margin: auto;
-    transition: transform 0.5s ease-in-out;
-    object-fit: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .img-profile:hover {
     transform: scale(1.1);
+}
+
+.img-profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #a855f7; /* Morado */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.text-about {
+  max-width: 600px;
+  color: #f3f4f6; /* texto claro */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.grid-acerca{
+        display: flex;
+         align-items: center;
+          justify-content: center;
+         gap: 3rem;
+         flex-wrap: wrap;
 }
 
 #start {
